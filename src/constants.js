@@ -21,6 +21,15 @@ export const PRIORITIES = {
 
 export const ORDER = ['low', 'medium', 'high']
 
+export const CATEGORIES = {
+  work:     { label: 'งาน',      tag: 'bg-sky-50 text-sky-700',       dot: 'bg-sky-500' },
+  personal: { label: 'ส่วนตัว',   tag: 'bg-violet-50 text-violet-700', dot: 'bg-violet-500' },
+  shopping: { label: 'ช้อปปิ้ง',  tag: 'bg-pink-50 text-pink-700',     dot: 'bg-pink-500' },
+  health:   { label: 'สุขภาพ',   tag: 'bg-teal-50 text-teal-700',     dot: 'bg-teal-500' },
+}
+
+export const CATEGORY_ORDER = ['work', 'personal', 'shopping', 'health']
+
 export const FILTERS = [
   { key: 'all', label: 'ทั้งหมด' },
   { key: 'active', label: 'ยังไม่เสร็จ' },
