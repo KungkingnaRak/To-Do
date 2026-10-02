@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  padding-top: env(safe-area-inset-top, 0px);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+body {
+  margin: 0;
+  background: #f3f4f6;
+  color: #111827;
+  @apply font-sans;
+}
+
+@keyframes todoIn {
+  from { opacity: 0; transform: translateY(-8px) scale(0.98); }
+  to   { opacity: 1; transform: none; }
+}
+@keyframes todoOut {
+  to { opacity: 0; transform: translateX(40px) scale(0.96); }
+}
+
+.todo-in  { animation: todoIn 0.25s ease-out; }
+.todo-out { animation: todoOut 0.25s ease-in forwards; }
